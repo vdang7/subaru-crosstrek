@@ -44,8 +44,9 @@
         overflow: hidden;
         position: absolute;
         z-index: -10;
-        width: 35vw;
-        transform: translateX(-50%) translateY(-1.25rem);
+        display: none;
+        /* width: 35vw;
+        transform: translateX(-50%) translateY(-1.25rem); */
     }
     
     .carousel-gallery img {
@@ -55,8 +56,11 @@
 
     @media (min-width: 1024px) {
         .carousel-gallery {
+            display: block;
             width: 24rem;
-            transform: translateX(-50%) translateY(-1.5rem);
+            top: -1%; 
+            right:-2%;
+            transform: scale(0.6);
         }
     }
 
