@@ -94,8 +94,8 @@
     }
 
     .cta-button {
-        background-color: var(--primary-100);
-        color: var(--primary-900);
+        color: var(--primary-950);
+        background-color: var(--primary-400);
         font-size: 0.875rem;
         line-height: 1.25rem;
         font-weight: 600;
@@ -108,8 +108,6 @@
     }
 
     .cta-button:hover {
-        color: var(--primary-950);
-        background-color: var(--primary-400);
         transform: translateY(-0.25rem) translateX(0.25rem);
     }
 
