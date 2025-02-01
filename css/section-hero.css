@@ -1,0 +1,119 @@
+.section-hero {
+    position: relative;
+
+    .pattern-plus-light-gray {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 42.9rem;
+        height: 42.9rem;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: -10;
+        border-radius: 9999px;
+    }
+
+    h1 {
+        padding-top: 2.5rem; /* pt-10 */
+        text-align: center; /* text-center */
+        font-size: 0.875rem; /* text-sm */
+        line-height: 1.25rem;
+        text-transform: uppercase; /* uppercase */
+        color: black; /* text-black */
+    }
+
+    h1 span {
+        display: block;
+        font-size: 0.75rem /* 12px */;
+        line-height: 1rem /* 16px */;
+        color: var(--primary-700);
+    }
+
+    .section-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media (min-width: 1024px) {
+        .section-container {
+            max-width: 1440px;
+        }
+    }
+
+    .carousel-gallery {
+        overflow: hidden;
+        position: absolute;
+        z-index: -10;
+        width: 35vw;
+        transform: translateX(-50%) translateY(-1.25rem);
+    }
+    
+    .carousel-gallery img {
+        object-fit: cover;
+        aspect-ratio: 16/9;
+    }
+
+    @media (min-width: 1024px) {
+        .carousel-gallery {
+            width: 24rem;
+            transform: translateX(-50%) translateY(-1.5rem);
+        }
+    }
+
+    .vehicle-image {
+        width: 100%;
+    }
+
+    .crosstrek-text-svg {
+        position: relative;
+        z-index: -10;
+        width: 100%;
+        transform: translateY(-10vw);
+        color: black;
+    }
+
+    @media (min-width: 768px) {
+        .crosstrek-text-svg {
+            transform: translateY(-11vw);
+        }
+    }
+
+    .slogan {
+        transform: translateY(-10vw);
+        font-size: 0.75rem;
+        line-height: 1rem;
+        margin-top: 0.75rem;
+        color: var(--primary-700);
+        font-family: 'Zen Dots', serif;
+        font-style: normal;
+    }
+
+    @media (min-width: 640px) {
+        .slogan {
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .slogan {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    }
+
+    .pattern-plus-primary {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: none;
+        height: 5rem;
+        width: 10rem;
+    }
+
+    @media (min-width: 768px) {
+        .pattern-plus-primary {
+            display: block;
+        }
+    }
+}

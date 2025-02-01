@@ -1,0 +1,14 @@
+body {
+    font-family: 'Zen Dots', serif;
+    font-style: normal;
+}
+
+h1,
+h3 {
+    color: var(--gray-950);
+}
+
+p {
+    font-family: 'Inter', serif;
+    font-style: normal;
+}

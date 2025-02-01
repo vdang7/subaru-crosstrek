@@ -1,0 +1,47 @@
+.section-feature {
+    position: relative;
+
+    .image-wrapper {
+        position: relative;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .text-wrapper {
+        margin-top: 2.5rem;
+        padding: 0 1.5rem;
+        position: relative;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.75rem;
+        letter-spacing: -0.025em;
+    }
+
+    p {
+        margin-top: 1rem;
+        max-width: 65ch;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        color: var(--gray-600);
+    }
+
+    @media (min-width: 640px) {
+        .text-wrapper {
+            position: absolute;
+            bottom: 2.5rem;
+        }
+
+        h3 {
+            color: white;
+        }
+        p {
+            color: white;
+        }
+    }
+}

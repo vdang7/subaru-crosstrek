@@ -1,0 +1,107 @@
+.section-two-column {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .column-left {
+        display: grid;
+        row-gap: 2.5rem;
+    }
+
+    .column-left .top-group {
+        position: relative;
+
+        .border-top {
+            border-color: var(--primary-300);
+        }
+
+        .border-bottom {
+            border-color: var(--primary-900);
+        }
+    }
+
+    .column-left .bottom-group {
+        display: flex;
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            line-height: 1.75rem;
+        }
+
+        p {
+            margin-top: 1rem;
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+            color: #4b5563;
+        }
+    }
+
+    .column-left .inline-image {
+        position: relative;
+        margin-left: 3rem;
+        display: none;
+        align-self: flex-start;
+
+        img {
+            width: auto;
+            max-width: 18rem;
+
+            object-fit: cover;
+        }
+
+        .border-top {
+            border-color: var(--primary-900);
+        }
+
+        .border-bottom {
+            border-color: var(--primary-400);
+        }
+
+        @media (min-width: 768px) {
+            display: block;
+        }
+
+        @media (min-width: 1024px) {
+            display: none;
+        }
+    }
+
+    .column-right {
+        display: none;
+        position: relative;
+        z-index: 10;
+        align-self: flex-start;
+        .border-top {
+            border-color: var(--primary-300);
+        }
+
+        .border-bottom {
+            border-color: var(--primary-900);
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .grid {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 4rem;
+        }
+
+        .top-group {
+            order: 1;
+        }
+
+        .column-right {
+            display: block;
+        }
+
+        .column-left .top-group .border-top {
+            border-color: var(--primary-900);
+        }
+
+        .column-left .top-group .border-bottom {
+            border-color: var(--primary-300);
+        }
+    }
+}

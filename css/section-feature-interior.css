@@ -1,0 +1,49 @@
+.section-feature-interior {
+    .gradient-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 15rem;
+        background: linear-gradient(to top, #1a0a05, transparent);
+
+        display: none;
+    }
+
+    .pattern-plus {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 65rem;
+        width: 18rem;
+        transform: translateY(-59rem);
+        display: none;
+    }
+
+    .square {
+        width: 5rem;
+        height: 5rem;
+        position: absolute;
+        bottom: 17rem;
+        right: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(50%);
+        border: 2px dashed var(--primary-500);
+    }
+
+    @media (min-width: 640px) {
+        .gradient-overlay {
+            display: block;
+        }
+        h3 {
+            font-size: 1.67rem;
+        }
+    }
+    @media (min-width: 1024px) {
+        .pattern-plus {
+            display: block;
+        }
+    }
+}
