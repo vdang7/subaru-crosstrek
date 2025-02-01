@@ -41,12 +41,12 @@
     }
 
     .carousel-gallery {
+        display: none;
         overflow: hidden;
         position: absolute;
         z-index: -10;
-        display: none;
-        /* width: 35vw;
-        transform: translateX(-50%) translateY(-1.25rem); */
+        width: 35vw;
+        transform: translateX(-50%) translateY(-1.25rem);
     }
     
     .carousel-gallery img {
@@ -54,17 +54,15 @@
         aspect-ratio: 16/9;
     }
 
-    @media (min-width: 1024px) {
+    /* @media (min-width: 1024px) {
         .carousel-gallery {
-            display: block;
             width: 24rem;
-            top: -1%; 
-            right:-2%;
-            transform: scale(0.6);
+            transform: translateX(-50%) translateY(-1.5rem);
         }
-    }
+    } */
 
     .vehicle-image {
+        transform: translateY(-7rem);
         width: 100%;
     }
 
